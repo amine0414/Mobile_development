@@ -2,6 +2,7 @@ package com.example.tpsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,6 +13,7 @@ public class UpdateActivity extends AppCompatActivity {
     EditText Fname,Lname,Age,Situation;
     Button update_btn;
     String id,fName,lName,age,situation;
+    Button deleteBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +23,18 @@ public class UpdateActivity extends AppCompatActivity {
         this.Age=findViewById(R.id.Age_txt_update);
         this.Situation=findViewById(R.id.Situation_txt_update);
         update_btn=findViewById(R.id.update_button);
+        deleteBtn= findViewById(R.id.delete_button);
+
         getIntentData();
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Database db=new Database(UpdateActivity.this);
+                db.DeletePerson(Integer.parseInt(id));
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
+            }
+        });
         update_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

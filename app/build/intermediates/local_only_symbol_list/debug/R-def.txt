@@ -24,6 +24,7 @@ id SituationInput
 id Situation_txt_output
 id Situation_txt_update
 id add_button
+id delete_button
 id id_output
 id mainLayout
 id recyclerView
