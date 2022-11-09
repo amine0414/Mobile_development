@@ -63,4 +63,11 @@ public class Database extends SQLiteOpenHelper {
         }
         return cursor;
     }
+
+    //---deletes a particular title---
+    public boolean DeletePerson(int id)
+    {
+        SQLiteDatabase db=this.getReadableDatabase();
+        return db.delete(TABLE_NAME, COLUMN_ID + "=" + id, null) > 0;
+    }
 }
