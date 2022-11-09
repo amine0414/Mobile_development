@@ -42,11 +42,17 @@ public class MainActivity extends AppCompatActivity {
         Lname=new ArrayList<>();
         Age=new ArrayList<>();
         Situation=new ArrayList<>();
-        this.stockPersonsIntoList();
-        custom=new CustomAddapter(MainActivity.this,this,id,Fname,Lname,Age,Situation);
-        recyclerView.setAdapter(custom );
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
+        new Thread(
+                ()->{
+                    this.stockPersonsIntoList();
+                    runOnUiThread(()->{
+                        custom=new CustomAddapter(MainActivity.this,this,id,Fname,Lname,Age,Situation);
+                        recyclerView.setAdapter(custom );
+                        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                    });
+                }
+        ).start();
 
     }
     @Override

@@ -44,7 +44,8 @@ public class UpdateActivity extends AppCompatActivity {
                 age = Age.getText().toString().trim();
                 situation=Situation.getText().toString().trim();
                 db.updateData(id,fName,lName,age,situation);
-
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
             }
         });
 

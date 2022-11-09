@@ -2,6 +2,7 @@ package com.example.tpsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,6 +26,8 @@ public class AddActivity extends AppCompatActivity {
                 Database db = new Database(AddActivity.this);
                 db.addPerson(FirstNameInput.getText().toString().trim(),LastNameInput.getText().toString().trim()
                         ,Integer.valueOf(AgeInput.getText().toString().trim()),SituationInput.getText().toString().trim());
+                Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(i);
             }
         });
     }
