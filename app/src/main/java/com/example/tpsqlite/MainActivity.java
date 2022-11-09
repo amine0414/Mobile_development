@@ -1,5 +1,6 @@
 package com.example.tpsqlite;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -42,12 +43,21 @@ public class MainActivity extends AppCompatActivity {
         Age=new ArrayList<>();
         Situation=new ArrayList<>();
         this.stockPersonsIntoList();
-        custom=new CustomAddapter(MainActivity.this,id,Fname,Lname,Age,Situation);
+        custom=new CustomAddapter(MainActivity.this,this,id,Fname,Lname,Age,Situation);
         recyclerView.setAdapter(custom );
         recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
 
 
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode,resultCode,data );
+        if(requestCode==1){
+            recreate();
+        }
+
+    }
+
     void stockPersonsIntoList(){
         Cursor cursor=db.SelectPersons();
         if(cursor.getCount()==0){

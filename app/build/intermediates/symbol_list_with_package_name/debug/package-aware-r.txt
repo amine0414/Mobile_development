@@ -2518,14 +2518,17 @@ id ALT
 id AddButton
 id AgeInput
 id Age_txt_output
+id Age_txt_update
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id FUNCTION
 id FirstNameInput
 id Fname_txt_output
+id Fname_txt_update
 id LastNameInput
 id Lname_txt_output
+id Lname_txt_update
 id META
 id NO_DEBUG
 id SHIFT
@@ -2535,6 +2538,7 @@ id SHOW_PROGRESS
 id SYM
 id SituationInput
 id Situation_txt_output
+id Situation_txt_update
 id TOP_END
 id TOP_START
 id accelerate
@@ -2769,6 +2773,7 @@ id line3
 id linear
 id listMode
 id list_item
+id mainLayout
 id masked
 id match_constraint
 id match_parent
@@ -2992,6 +2997,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id update_button
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3105,6 +3111,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add
 layout activity_main
+layout activity_update
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

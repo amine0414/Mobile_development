@@ -2517,14 +2517,17 @@ int id ALT 0x7f080000
 int id AddButton 0x7f080001
 int id AgeInput 0x7f080002
 int id Age_txt_output 0x7f080003
+int id Age_txt_update 0x7f0801f1
 int id BOTTOM_END 0x7f080004
 int id BOTTOM_START 0x7f080005
 int id CTRL 0x7f080006
 int id FUNCTION 0x7f080007
 int id FirstNameInput 0x7f080008
 int id Fname_txt_output 0x7f080009
+int id Fname_txt_update 0x7f0801f2
 int id LastNameInput 0x7f08000a
 int id Lname_txt_output 0x7f08000b
+int id Lname_txt_update 0x7f0801f3
 int id META 0x7f08000c
 int id NO_DEBUG 0x7f08000d
 int id SHIFT 0x7f08000e
@@ -2534,6 +2537,7 @@ int id SHOW_PROGRESS 0x7f080011
 int id SYM 0x7f080012
 int id SituationInput 0x7f080013
 int id Situation_txt_output 0x7f080014
+int id Situation_txt_update 0x7f0801f4
 int id TOP_END 0x7f080015
 int id TOP_START 0x7f080016
 int id accelerate 0x7f080017
@@ -2768,6 +2772,7 @@ int id line3 0x7f0800fb
 int id linear 0x7f0800fc
 int id listMode 0x7f0800fd
 int id list_item 0x7f0800fe
+int id mainLayout 0x7f0801f5
 int id masked 0x7f0800ff
 int id match_constraint 0x7f080100
 int id match_parent 0x7f080101
@@ -2991,6 +2996,7 @@ int id unchecked 0x7f0801da
 int id uniform 0x7f0801db
 int id unlabeled 0x7f0801dc
 int id up 0x7f0801dd
+int id update_button 0x7f0801f6
 int id useLogo 0x7f0801de
 int id vertical_only 0x7f0801df
 int id view_offset_helper 0x7f0801e0
@@ -3104,6 +3110,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_add 0x7f0b001c
 int layout activity_main 0x7f0b001d
+int layout activity_update 0x7f0b0079
 int layout custom_dialog 0x7f0b001e
 int layout design_bottom_navigation_item 0x7f0b001f
 int layout design_bottom_sheet_dialog 0x7f0b0020

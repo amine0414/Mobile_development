@@ -21,6 +21,13 @@
         android:testOnly="true"
         android:theme="@style/Theme.TpSQLite" >
         <activity
+            android:name="com.example.tpsqlite.UpdateActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.tpsqlite.AddActivity"
             android:exported="false"
             android:label="Add Person"

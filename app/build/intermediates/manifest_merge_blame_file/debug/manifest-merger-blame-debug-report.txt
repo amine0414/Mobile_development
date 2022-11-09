@@ -11,7 +11,7 @@
 9-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:5:5-38:19
+11-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:5:5-45:19
 12        android:allowBackup="true"
 12-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -33,70 +33,83 @@
 22        android:theme="@style/Theme.TpSQLite" >
 22-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:13:9-46
 23        <activity
-23-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:15:9-23:20
-24            android:name="com.example.tpsqlite.AddActivity"
-24-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:16:13-40
-25            android:exported="false"
-25-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:19:13-37
-26            android:label="Add Person"
-26-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:18:13-39
-27            android:parentActivityName="com.example.tpsqlite.AddActivity" >
-27-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:17:13-54
-28            <meta-data
-28-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:20:13-22:36
-29                android:name="android.app.lib_name"
-29-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:21:17-52
-30                android:value="" />
-30-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:22:17-33
-31        </activity>
-32        <activity
-32-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:24:9-37:20
-33            android:name="com.example.tpsqlite.MainActivity"
-33-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:25:13-41
-34            android:exported="true"
-34-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:26:13-36
-35            android:label="Add Person" >
-35-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:27:13-39
-36            <intent-filter>
-36-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:28:13-32:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:29:17-69
-37-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:29:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:31:17-77
-39-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:31:27-74
-40            </intent-filter>
-41
-42            <meta-data
-42-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:20:13-22:36
-43                android:name="android.app.lib_name"
-43-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:21:17-52
-44                android:value="" />
-44-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:22:17-33
-45        </activity>
-46
-47        <provider
-47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-48            android:name="androidx.startup.InitializationProvider"
-48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-49            android:authorities="com.example.tpsqlite.androidx-startup"
-49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-50            android:exported="false" >
-50-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-51            <meta-data
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-52                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-53                android:value="androidx.startup" />
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-54            <meta-data
-54-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amine\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-55                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-55-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amine\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-56                android:value="androidx.startup" />
-56-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amine\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-57        </provider>
-58    </application>
-59
-60</manifest>
+23-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:15:9-21:20
+24            android:name="com.example.tpsqlite.UpdateActivity"
+24-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:16:13-43
+25            android:exported="false" >
+25-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:17:13-37
+26            <meta-data
+26-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:18:13-20:36
+27                android:name="android.app.lib_name"
+27-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:19:17-52
+28                android:value="" />
+28-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:20:17-33
+29        </activity>
+30        <activity
+30-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:22:9-30:20
+31            android:name="com.example.tpsqlite.AddActivity"
+31-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:23:13-40
+32            android:exported="false"
+32-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:24:13-37
+33            android:label="Add Person"
+33-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:25:13-39
+34            android:parentActivityName="com.example.tpsqlite.AddActivity" >
+34-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:26:13-54
+35            <meta-data
+35-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:18:13-20:36
+36                android:name="android.app.lib_name"
+36-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:19:17-52
+37                android:value="" />
+37-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:20:17-33
+38        </activity>
+39        <activity
+39-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:31:9-44:20
+40            android:name="com.example.tpsqlite.MainActivity"
+40-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:32:13-41
+41            android:exported="true"
+41-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:33:13-36
+42            android:label="Add Person" >
+42-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:34:13-39
+43            <intent-filter>
+43-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:35:13-39:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:36:17-69
+44-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:36:25-66
+45
+46                <category android:name="android.intent.category.LAUNCHER" />
+46-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:38:17-77
+46-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:38:27-74
+47            </intent-filter>
+48
+49            <meta-data
+49-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:18:13-20:36
+50                android:name="android.app.lib_name"
+50-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:19:17-52
+51                android:value="" />
+51-->C:\Users\amine\AndroidStudioProjects\TpSQLite\app\src\main\AndroidManifest.xml:20:17-33
+52        </activity>
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+56            android:authorities="com.example.tpsqlite.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\amine\.gradle\caches\transforms-3\ec6e2ba61c9a42dd8e0aa44ee71f9dfb\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+61            <meta-data
+61-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amine\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amine\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+63                android:value="androidx.startup" />
+63-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\amine\.gradle\caches\transforms-3\371d4428813d11175307b9e72a350208\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+64        </provider>
+65    </application>
+66
+67</manifest>
