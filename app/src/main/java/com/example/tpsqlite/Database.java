@@ -80,8 +80,7 @@ public class Database extends SQLiteOpenHelper {
     }
 
     //---deletes a particular person---
-    public void DeletePerson(int id)
-    {
+    public void DeletePerson(int id) {
         SQLiteDatabase db=this.getReadableDatabase();
         db.delete(TABLE_NAME, COLUMN_ID + "=" + id, null);
     }

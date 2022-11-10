@@ -1,7 +1,9 @@
 package com.example.tpsqlite;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -23,18 +25,12 @@ public class UpdateActivity extends AppCompatActivity {
         this.Age=findViewById(R.id.Age_txt_update);
         this.Situation=findViewById(R.id.Situation_txt_update);
         update_btn=findViewById(R.id.update_button);
-        deleteBtn= findViewById(R.id.delete_button);
 
         getIntentData();
-        deleteBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Database db=new Database(UpdateActivity.this);
-                db.DeletePerson(Integer.parseInt(id));
-                Intent i = new Intent(getApplicationContext(),MainActivity.class);
-                startActivity(i);
-            }
-        });
+
+        deleteBtn= findViewById(R.id.delete_button);
+        deleteBtn.setOnClickListener(this::deletePerson);
+
         update_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,6 +47,25 @@ public class UpdateActivity extends AppCompatActivity {
 
 
     }
+
+    private void deletePerson(View view) {
+        Database db=new Database(UpdateActivity.this);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Suppression de "+Lname.getText().toString()+" "+Fname.getText().toString());
+        builder.setIcon(android.R.drawable.ic_dialog_alert);
+        builder.setMessage("Vous confirmez la suppression ?");
+        builder.setPositiveButton(android.R.string.ok,
+                (dialog, idbtn) -> {
+                    db.DeletePerson(Integer.parseInt(id));
+                    Intent i = new Intent(getApplicationContext(),MainActivity.class);
+                    startActivity(i);
+                });
+        builder.setNegativeButton(android.R.string.cancel, null);
+        Dialog dialog= builder.create();
+        dialog.show();
+    }
+
     void getIntentData(){
         if(getIntent().hasExtra("id") && getIntent().hasExtra("FirstName") &&
                 getIntent().hasExtra("LastName") && getIntent().hasExtra("Age") && getIntent().hasExtra("Situation")){
@@ -69,4 +84,5 @@ public class UpdateActivity extends AppCompatActivity {
             Toast.makeText(this,"No Data",Toast.LENGTH_SHORT).show();
         }
     }
+
 }
